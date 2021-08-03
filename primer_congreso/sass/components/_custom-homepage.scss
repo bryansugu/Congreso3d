@@ -1,0 +1,715 @@
+@import "../../node_modules/bootstrap/scss/mixins";
+
+body{
+	//background: $color-brand;
+}
+#main{
+	overflow: hidden;
+}
+.container{
+	@include media-breakpoint-down(sm) {
+		overflow: hidden;
+	}
+}
+
+.block{
+	&--hero{
+		height: calc(100vh - 130px;);
+		background: linear-gradient(to bottom, rgba(15,121,255,1) 0%, rgba(15,121,255,1) 65%, rgba(13,107,255,1) 72%, rgba(13,107,255,1) 100%);
+		@include color-desborde(linear-gradient(to bottom, rgba(15,121,255,1) 0%, rgba(15,121,255,1) 65%, rgba(13,107,255,1) 72%, rgba(13,107,255,1) 100%));
+		@media screen and (min-width: $break-slarge) {
+		    background: linear-gradient(to bottom, rgba(15,121,255,1) 0%, rgba(15,121,255,1) 50%, rgba(13,107,255,1) 58%, rgba(13,107,255,1) 100%);
+			@include color-desborde(linear-gradient(to bottom, rgba(15,121,255,1) 0%, rgba(15,121,255,1) 50%, rgba(13,107,255,1) 58%, rgba(13,107,255,1) 100%));
+		}
+	}
+	&--about{
+		background: $color-brand;
+		padding: 6rem 0;
+		@include color-desborde($color-brand);
+	}
+	&--cursos{
+		background: $color-brand-light;
+		padding: 2rem 0 3rem;
+		@include color-desborde($color-brand-light);
+	}
+	&--invitados{
+		background: $color-brand-dark;
+		padding: 1rem 0 4rem;
+		@include color-desborde($color-brand-dark);
+	}
+	&--empresa{
+		background: $color-negro-0;
+		padding: 3rem 0 4rem;
+		@include media-breakpoint-down(sm) {
+			padding: 2rem 0;	
+		}
+	}
+	&--form{
+		background: $color-magenta-30;
+		padding: 3rem 0 ;
+		@include color-desborde($color-magenta-30);
+	}
+	&--footer{
+		background: $color-negro-0;
+		padding: 3rem 0 ;
+	}
+	&--inversion{
+		background: $color-negro-5;
+		padding: 3rem 0;
+		@include color-desborde($color-negro-5);
+	}
+	&--gracias{
+		background: $color-brand-light;
+		padding: 6rem 0;
+		@include color-desborde($color-brand-light);
+		@include media-breakpoint-down(sm) {
+			padding: 2rem 0;
+			text-align:center;
+		}
+	}
+}
+.field{
+	&--name-hero-image{
+		@include font-set($font-dp-light, $size-30, $color-negro-0, 2px,  1);
+		opacity: 0;
+	}
+	&--name-hero-body{
+		position: relative;
+		&--titlevertical{
+			@include font-set($font-dp-light, $size-30, $color-negro-0, 2px,  1);
+			text-transform: uppercase;
+			opacity: 0;
+			left: 0;
+			width: 0;
+			white-space: nowrap;
+			@include rotate-autor(1rem, 0);
+			@include media-breakpoint-down(sm) {
+				position: relative;
+				white-space: initial;
+				font-size: $size-22;
+				margin-bottom: 2rem;
+				margin-top: 1rem;
+				transform: rotate(0);
+			}
+		}
+		&--titleh1{
+			@include font-set($font-dp-light, $size-65, $color-negro-0, 2px,  1);
+			text-transform: uppercase;
+			position: relative;
+			width: auto;
+			opacity: 0;
+			@include media-breakpoint-down(sm) {
+				font-size: $size-50;
+			}
+
+		}
+		&--titleh2{
+			@include font-set($font-dp-bold, $size-65, $color-negro-0, 2px,  1);
+			text-transform: uppercase;
+			position: relative;
+			width: auto;
+			opacity: 0;
+			@include media-breakpoint-down(sm) {
+				font-size: $size-40;
+				img{
+					width: 20px;
+				}
+			}
+
+		}
+		&--titleh3{
+			@include font-set($font-dp-bold, $size-65, $color-negro-0, 2px,  1);
+			text-transform: uppercase;
+			position: relative;
+			width: auto;
+			opacity: 0;
+			@include media-breakpoint-down(sm) {
+				font-size: $size-40;
+			}
+		}
+		&--date{
+			@include font-set($font-dp-light, $size-63, $color-negro-0, 2px,  1);
+			text-transform: uppercase;
+			margin-top: 5rem;
+			opacity: 0;
+			@include media-breakpoint-down(sm) {
+				font-size: $size-40;
+				margin-top: 4rem;
+			}
+		}
+		&--mes{
+			@include font-set($font-dp-light, $size-65, $color-negro-0, 2px,  1);
+			text-transform: uppercase;
+			opacity: 0;
+			@include media-breakpoint-down(sm) {
+				font-size: $size-40;
+			}
+		}
+		&--lugar{
+			margin-top: 2rem;
+			@include font-set($font-dp-light, $size-20, $color-negro-0, 2px,  1.3);
+			opacity: 0;
+			@include media-breakpoint-down(sm) {
+				font-size: $size-15;
+			}
+		}
+	}
+	&--name-gracias-body{
+		&--titleh1{
+			@include font-set($font-dp-light, $size-65, $color-negro-0, 2px,  1);
+			text-transform: uppercase;
+			position: relative;
+			width: auto;
+			//opacity: 0;
+			@include media-breakpoint-down(sm) {
+				font-size: $size-50;
+			}
+
+		}
+		&--titleh2{
+			margin-top: 1rem;
+			@include font-set($font-dp-light, $size-20, $color-negro-0, 2px,  1.3);
+		}
+	}
+	&--name-icon-mouse{
+		border: 2px solid $color-negro-0;
+	    border-radius: 20px;
+	    display: block;
+	    height: 46px;
+	    width: 26px;
+	    @include media-breakpoint-down(sm) {
+			display: none;
+		}
+	    span{
+	    	animation-duration: 1s;
+			animation-fill-mode: both;
+			animation-iteration-count: infinite;
+			animation-name: scroll;
+			background: none repeat scroll 0 0 #e8f380;
+			border: 1px solid transparent;
+			border-radius: 6px;
+			display: block;
+			height: 4px;
+			margin: 6px auto;
+			width: 4px;
+	    }
+	}
+	&--name-about-destacado{
+		@include font-set($font-dp-light, $size-22, $color-negro-0, 0,  1);
+		position:relative;
+		opacity: 0;
+		&::before{
+			content: '';
+			position: absolute;
+			top:-2rem;
+			left: 0;
+			@include size(80px, 10px);
+			background: $color-negro-0;
+		}
+	}
+	&--name-about-body{
+		@include font-set($font-dp-regular, $size-15, $color-negro-0, 0,  1.3);
+		opacity: 0;
+		@include media-breakpoint-down(sm) {
+			margin-top: 2rem;
+		}
+	}
+	&--name-invitados-card{
+		background: $color-negro-0;
+		border-radius: 5px;
+		box-shadow: 0px 6px 7px 3px rgba(0,87,225,1);
+		opacity: 0;
+		&--city{
+			@include font-set($font-dp-light, $size-13, $color-negro-0, 0,  1);
+			background: $color-magenta;
+			display: inline;
+			padding:0.3rem;
+			float: right;
+			margin-top: -1.4rem;
+			z-index: 1;
+			position: relative;
+		}
+		&--img{
+			img{
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+				width: 100%;
+				position: relative;
+				z-index: 0;
+			}
+		}
+		&--body{
+			padding: 1rem;
+			&-title{
+				@include font-set($font-dp-medium, $size-22, $color-brand, 0,  1.3);
+				margin-bottom: 0.5rem;
+			}
+			&-cv{
+				@include font-set($font-dp-light, $size-13, $color-brand, 0,  1.3);
+				a{
+					@include font-set($font-dp-light, $size-13, $color-magenta, 1px,  1);
+					display: block;
+					margin-top: 0.5rem;
+					text-decoration: underline;
+				}
+			}
+		}
+
+	}
+	&--name-invitados-title{
+		height: 130px;
+    	position: relative;
+    	opacity: 0;
+		&::before{
+			content: '';
+			position: absolute;
+			bottom:0.5rem;
+			left: -5px;
+			@include size(23px);
+			background: url('../images/icon-mas-s.svg');
+		}
+		span{
+			@include font-set($font-dp-regular, $size-15, $color-negro-0, 2px,  1);
+			text-transform: uppercase;
+			left: 0;
+			width: 0;
+			@include rotate-autor(90px, 0);
+		}
+		@include media-breakpoint-down(sm) {
+			height: 40px;
+			
+			padding-bottom: 1rem;
+			&::before{
+				left: 0px;
+				top: 0px;
+			}
+			span{
+				transform: rotate(0);
+				top: 0;
+				padding-left: 2rem;
+			}
+		}
+	}
+	&--name-agenda{
+		margin-top: 3rem;
+		a{
+			background: $color-brand-light;
+			@include font-set($font-dp-regular, $size-15, $color-negro-0, 2px,  1);
+			display: block;
+			padding: 1.2rem 0 1.2rem 3rem;
+			text-transform: uppercase;
+			text-align: left;
+			border-radius: 0;
+			position: relative;
+			&::before{
+				content: '';
+				position: absolute;
+				top:0.8rem;
+				left:1rem;
+				@include size(23px);
+				background: url('../images/icon-mas-s.svg');
+			}
+			&::after{
+				content: '';
+				position: absolute;
+				top:0.8rem;
+				right:1.5rem;
+				@include size(82px, 29px);
+				background: url('../images/icon-next.svg');
+			}
+			&:hover{
+				color: white;
+				text-decoration: underline;
+			}
+		}
+	}
+	&--name-curso-title{
+		height: 130px;
+    	position: relative;
+		&::before{
+			content: '';
+			position: absolute;
+			bottom:0.5rem;
+			left: -5px;
+			@include size(23px);
+			background: url('../images/icon-mas-s.svg');
+		}
+		span{
+			@include font-set($font-dp-regular, $size-15, $color-magenta-30, 2px,  1);
+			text-transform: uppercase;
+			left: 0;
+			width: 0;
+			@include rotate-autor(90px, 0);
+		}
+		@include media-breakpoint-down(sm) {
+			height: 40px;
+			
+			padding-bottom: 1rem;
+			&::before{
+				left: 0px;
+				top: 0px;
+			}
+			span{
+				transform: rotate(0);
+				top: 0;
+				padding-left: 2rem;
+			}
+		}
+		
+	}
+	&--name-curso-wrap{
+		margin-top: 2rem;
+	}
+	&--name-curso-card{
+		&--subtitle{
+			@include font-set($font-dp-light, 1rem, $color-negro-0, 0px,  1);
+			position: relative;
+			&::before{
+				content: '';
+				position: absolute;
+				top: -0.5rem;
+	    		left: 0;
+				@include size(14px, 1px);
+				background: $color-negro-0;
+				@include media-breakpoint-down(sm) {
+					background: $color-negro-0;
+				}
+			}
+		}
+		&--title{
+			@include font-set($font-dp-medium, $size-30, $color-magenta-30, 0px,  1);
+			padding-right: 3rem;
+			margin-top: 1rem;
+		}
+		&--body{
+			@include font-set($font-dp-light, $size-18, $color-negro-0, 0px,  1);
+			margin-top: 0.5rem;
+		}
+		&--date{
+			@include font-set($font-dp-regular, $size-22, $color-negro-0, 0px,  1);
+			margin-top: 1rem;
+		}
+		&--hour{
+			@include font-set($font-dp-medium, $size-15, $color-negro-0, 0px,  1);
+			margin-top: 0.3rem;
+		}
+		&--teach{
+			@include font-set($font-dp-light, $size-15, $color-negro-0, 2px,  1);
+			margin-top: 0.3rem;
+		}
+	}
+	&--name-empresa-title{
+		height: 200px;
+    	position: relative;
+    	opacity: 0;
+		span{
+			@include font-set($font-dp-regular, $size-15, $color-magenta, 2px,  1);
+			text-transform: uppercase;
+			left: 0;
+			width: 0;
+			@include rotate-autor(0px, 0);
+		}
+		@include media-breakpoint-down(sm) {
+			span{
+				@include rotate-autor(0px, 0);
+				position: relative;
+			}
+		}
+		height: auto;
+	}
+	&--name-empresa-destacado{
+		margin-top: 6rem;
+		margin-left: 3rem;
+		@include font-set($font-dp-light, $size-22, $color-brand, 0,  1);
+		opacity:0;
+		@include media-breakpoint-down(sm) {
+			margin:1rem  0;
+
+		}
+	}
+	&--name-empresa-grid{
+		margin-left: 3rem;
+		margin-top: 3rem;
+		@include media-breakpoint-down(sm) {
+			margin:0;
+		}
+	}
+	&--name-empresa-wrap{
+		margin-left: 3rem;
+		@include media-breakpoint-down(sm) {
+			margin:0;
+		}
+		.field--name-empresa-card{
+			//opacity: 1;
+		}
+	}
+	&--name-empresa-card{
+		opacity: 0;
+		@include media-breakpoint-down(sm) {
+			border-bottom: 1px solid $color-negro-10;
+			padding-bottom: 1rem;
+			&--img{
+				text-align: center;
+			}
+		}
+	}
+	&--name-empresa-card--body{
+		@include font-set($font-dp-light, $size-14, $color-negro-70, 0,  1.1);
+		margin-top: 2rem;
+		position: relative;
+		&::before{
+			content: '';
+			position: absolute;
+			top: 0.8rem;
+    		left: -1rem;
+			@include size(14px, 1px);
+			background: $color-negro-70;
+			@include media-breakpoint-down(sm) {
+				top: -0.8rem;
+    			left: 0rem;
+			}
+
+		}
+	}
+	&--empresa-link{
+		margin-top: .5rem;
+		@include font-set($font-dp-regular, $size-12, $color-brand, 2px,  1);
+		text-transform: uppercase;
+		display: inline-block;
+	}
+	&--name-form{
+		&--title{
+			@include font-set($font-dp-regular, $size-30, $color-magenta, 2px,  1);
+			text-transform: uppercase;
+			text-align: center;
+			white-space: nowrap;
+			@include media-breakpoint-down(sm) {
+				white-space: initial;
+			}
+		}
+		&--subtitle{
+			@include font-set($font-dp-regular, $size-15, $color-magenta, 2,  1);
+			text-align: center;
+			margin-top: 1rem;
+		}
+		&--input{
+			border:0;
+			border-bottom: 1px solid $color-magenta;
+			width:100%;
+			padding:0.5rem;
+			//text-transform: uppercase;
+			@include font-set($font-dp-regular, $size-15, $color-negro-70, 2,  1);
+			&#email{
+				margin: $size-50 0;
+			}
+			&::placeholder{
+			  	@include font-set($font-dp-regular, $size-15, $color-negro-70, 2,  1);
+			  	text-transform: uppercase;
+			}
+		}
+	}
+	&--name-form--wrap{
+		background: $color-negro-0;
+		padding: $size-50 $size-70;
+		border-radius: 5px;
+		margin-top: 2rem;
+		@include media-breakpoint-down(sm) {
+			padding: $size-30;
+		}
+	}
+	&--name-btn{
+		display: block;
+		background: $color-brand;
+		padding:1rem 0.5rem;
+		width: 100%;
+		@include font-set($font-dp-regular, $size-13, $color-negro-0, 2px,  1);
+		text-transform: uppercase;
+		border: 0;
+	}
+	&--name-footer{
+		&--grid{
+			img{
+				@include img-fluid();
+			}
+		}
+		&--title{
+			@include font-set($font-dp-regular, $size-13, $color-negro-30, 2px,  1);
+			text-transform: uppercase;
+			margin-bottom: .5rem;
+			&.blue-color{
+				color:$color-brand;
+			}
+
+		}
+		&--name{
+			@include font-set($font-dp-medium, $size-12, $color-negro-70, 2px,  1);
+		}
+		&--body{
+			@include font-set($font-dp-medium, $size-12, $color-negro-90, 2px,  1.3);
+			margin-top: 0.5rem;
+			margin-bottom: 1rem;
+			&.blue-color{
+				color:$color-brand;
+			}
+		}
+		&--email{
+			a{
+				@include font-set($font-dp-medium, $size-12, $color-negro-90, 2px,  1.3);
+				display: inline-block;
+				position: relative;
+				word-break: break-all;
+				&::before{
+					content: '';
+					position: absolute;
+					bottom:-0.3rem;
+					left:0;
+					@include size(100%, 1px);
+					background: $color-negro-90;
+				}
+			}
+		}
+	}
+	&--name-footer{
+
+		&--col3{
+			margin-top: 2rem;
+
+		}
+		&--col4{
+			margin-top: 2rem;
+		}
+	}
+	&--name-inversion-title{
+		height: 100px;
+    	position: relative;
+    	opacity: 0;
+		span{
+			@include font-set($font-dp-regular, $size-15, $color-brand, 2px,  1);
+			text-transform: uppercase;
+			left: 0;
+			width: 0;
+			@include rotate-autor(90px, 0);
+		}
+		@include media-breakpoint-down(sm) {
+			height: 40px;
+			
+			padding-bottom: 1rem;
+			&::before{
+				left: 0px;
+				top: 0px;
+			}
+			span{
+				transform: rotate(0);
+				top: 0;
+				padding-left: 2rem;
+				@include media-breakpoint-down(sm) {
+					padding-left:0;
+				}
+			}
+		}
+	}
+	&--name-inversion-card{
+		opacity: 0;
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 1rem;
+			padding-top: 1rem;
+			border-top: 1px solid $color-negro-10;
+		}
+		@media (min-width: $break-xsmedium) and (max-width: $break-lmedium) { 
+			margin-bottom: 1rem;
+			padding-top: 1rem;
+			border-top: 1px solid $color-negro-10;
+		}
+		&--promo{
+			@include font-set($font-dp-regular, $size-15, $color-magenta, 0,  1.1);
+		}
+		&--title{
+			@include font-set($font-dp-light, $size-22, $color-negro-50, 0,  1.1);
+			padding-top: 0.5rem;
+			margin-top: 0.5rem;
+			position: relative;
+			&::before{
+				content: '';
+				position: absolute;
+				top: 0rem;
+	    		left: 0;
+				@include size(14px, 1px);
+				background: $color-negro-50;
+				@include media-breakpoint-down(sm) {
+					background: $color-negro-5;
+				}
+			}
+		}
+		&--price{
+			@include font-set($font-dp-bold, $size-30, $color-brand, 0,  1.1);
+			margin-top: 1rem;
+		}
+	}
+	&--name-btn-inversion{
+		margin-top: 3rem;
+		a{
+			background: $color-magenta;
+			@include font-set($font-dp-regular, $size-15, $color-negro-0, 2px,  1);
+			display: block;
+			padding: 1.2rem 0 1.2rem 3rem;
+			text-transform: uppercase;
+			text-align: left;
+			border-radius: 0;
+			position: relative;
+			&::before{
+				content: '';
+				position: absolute;
+				top:0.8rem;
+				left:1rem;
+				@include size(23px);
+				background: url('../images/icon-mas-byn.svg');
+			}
+			&::after{
+				content: '';
+				position: absolute;
+				top:0.8rem;
+				right:1.5rem;
+				@include size(82px, 29px);
+				background: url('../images/icon-next.svg');
+			}
+		}
+	}
+	&-link-modal{
+		margin-top: 1rem;
+		border:0;
+		background: $color-magenta;
+		@include font-set($font-dp-regular, $size-15, $color-negro-0, 2px,  1);
+		padding: 0.7rem 1rem;
+		transition: all 1s;
+		display: inline-block;
+		&:hover{
+			opacity: 0.8;
+			color: white;
+			text-decoration: none;
+		}
+	}
+
+}
+.form-group{
+	.tyc{
+		@include font-set($font-dp-regular, $size-13, $color-negro-70, 0,  0);
+		+a{
+			@include font-set($font-dp-regular, $size-13, $color-brand, 0,  1);
+		}
+	}
+	input[type="checkbox"]{
+		margin-right: 0.6rem;
+	}
+}
+
+@keyframes scroll {
+	0% {
+	    opacity: 1;
+	    transform: translateY(0px);
+	}
+	100% {
+	    opacity: 0;
+	    transform: translateY(20px);
+	}
+}
+

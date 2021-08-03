@@ -1,0 +1,52 @@
+/* VARIABLES */
+
+// colors brand
+$color-brand: #0d6bff;
+$color-brand-light: #0F79FF;
+$color-brand-dark:#0063FF;
+$color-magenta: #ff335e;
+$color-magenta-30:#FFE6EB;
+
+// colors complementarios
+$color-acid-blue: #00fffc;
+$color-acid-yellow: #fff000;
+$color-acid-green: #00ff72;
+$color-acidlight-blue: #00ffa2;
+$color-acid-orange:#ff7d19;
+$color-acid-orange-20:#ffa866;
+$color-acid-purple: #AB00FF;
+$color-acid-aqua: #0091FF;
+
+// negros
+$color-negro-100: #000000;
+$color-negro-90: lighten( $color-negro-100, 10% );
+$color-negro-70: lighten( $color-negro-100, 30% );
+$color-negro-50: lighten( $color-negro-100, 50% );
+$color-negro-30: lighten( $color-negro-100, 70% );
+$color-negro-20: lighten( $color-negro-100, 80% );
+$color-negro-10: lighten( $color-negro-100, 90% );
+$color-negro-5: lighten( $color-negro-100, 95% );
+$color-negro-3: lighten( $color-negro-100, 97% );
+$color-negro-0:  lighten( $color-negro-100, 100% );
+
+
+// size
+$size-70: 4.375rem;
+$size-65: 4.0625rem;
+$size-63: 3.9375rem;
+$size-50: 3.125rem;
+$size-40: 2.5rem;
+$size-33: 2.063rem;
+$size-30: 1.875rem;
+$size-22: 1.375rem;
+$size-20: 1.25rem;
+$size-18: 1.125rem;
+$size-15: 0.9375rem;
+$size-14: 0.875rem;
+$size-13: 0.8125rem;
+$size-12: 0.75rem;
+
+
+$break-slarge: 1441px;
+$break-lmedium: 1023px;
+$break-xsmedium: 768px;

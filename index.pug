@@ -1,12 +1,12 @@
 extends pug/page-templates/tpl_home.pug
 
 block title
-    title 1er Congreso Internacional Impresión 3D + Salud
+    title 2do Congreso Internacional Impresión 3D + Salud
 
 block contenido
     .block.block--hero
         .field.field--name-hero-image
-            img(src="/images/alambre_cadera_com.png" alt="Imagen Congreso Impresion 3D + Salud")
+            img(src="/images/alambre_cadera_com.png" alt="Imagen Congreso Impresion 3D + Salud" style="width:100%")
         .field.field--name-hero-body
             .field--name-hero-body--titlevertical
                 |2do congreso internacional
@@ -145,11 +145,13 @@ block contenido
                 |Estoy interesado en asistir
             .field--name-form--subtitle
                 |Envíanos tus datos y te estaremos contactando.
-            .field--name-form--wrap
-                img(src="/images/alambre_cadera_com.png" alt="Imagen Congreso Impresion 3D + Salud" width="80%" style="margin-left:10%;")
+            .field--name-form--wrap(style="background-color:transparent")
+                .field.field--name-hero-image
+                    img(src="/images/alambre_cadera_com.png" alt="Imagen Congreso Impresion 3D + Salud" style="width:80%")
+                //- img(src="/images/alambre_cadera_com.png" alt="Imagen Congreso Impresion 3D + Salud" width="80%" style="margin-left:10%;")
                 .field--name-form--title REGISTRATE GRATIS!!                                                        
                 p(style="opacity:0.8;margin-top:35px;") Registrate totalmente <strong>Gratis</strong>, recibirás conferencias y talleres de las empresas lideres en el mercado, Materialise, Cellink, Mirrakoi, 3D systems, Grupo Abstract, Stratasys, LifeSi, Merck, 3DSolutions, TechFit, Shining 3D, Meltio.
-                p <strong>Ingresa con el siguiente botón al registro</strong>. 
+                p <strong>Ingresa con el siguiente botón al registro ↓</strong>
                 //- form#formulario(name="contactform" method="post" action="php/send_form_email.php")
                 //-     .form-group
                 //-         input#first_name.field--name-form--input(type='text', placeholder='Nombres Completos' name='first_name' required="true")
@@ -162,10 +164,10 @@ block contenido
                 //-         span.tyc
                 //-             |Autorizo a Universidad El Bosque para el envío de información. Leer 
                 //-         a(href="https://www.uelbosque.edu.co/sites/default/files/documentos/politica_privacidad_informacion_pagina_web_universidad_el_bosque.pdf" target="_blank") términos y condiciones
-            a.field.field--name-btn(href="https://live.eventtia.com/es/congreso3dsalud" target="_blank" style="color:white; text-align:center") <strong>Registrarme</strong>
+            a.field.field--name-btn(href="https://live.eventtia.com/es/congreso3dsalud" target="_blank" style="color:white; text-align:center") <strong>Registrarme en el Congreso de impresión 3d </strong>
 
     //- CURSOS
-    .block.block--cursos
+    .block.block--cursos#agenda_academica
         //- .field.field--name-curso-title
         //-     span
         //-         |Agenda

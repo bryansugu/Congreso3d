@@ -1,0 +1,153 @@
+extends pug/page-templates/tpl_home.pug
+
+block title
+    title 1er Congreso Internacional Impresión 3D + Salud
+
+block contenido
+    .block.block--hero
+        .field.field--name-hero-image
+            img(src="/images/alambre.png" alt="Imagen Congreso Impresion 3D + Salud")
+        .field.field--name-hero-body
+            .field--name-hero-body--titlevertical
+                |1er congreso internacional
+            .field--name-hero-body--titleh1#logo
+                |Impresión
+            .field--name-hero-body--titleh2
+                |3d
+                span
+                    img(src="/images/icon-mas.svg" alt="Imagen Congreso Impresion 3D + Salud")
+            .field--name-hero-body--titleh3
+                |Salud
+            .field--name-hero-body--date
+                |30 - 31/2019
+            .field--name-hero-body--mes
+                |Agosto
+            .field--name-hero-body--lugar
+                |Universidad El Bosque<br>
+                |Bogotá - Colombia
+        .field.field--name-icon-mouse
+            span
+    .block.block--about#trigger1
+        .field.field--name-about-destacado
+            |Conoce las tecnologías de software y hardware para la construcción de modelos impresos en 3D para áreas de la salud
+        .field.field--name-about-body
+            |El primer Congreso Internacional de Impresión 3D en Áreas de la Salud es un espacio donde se mostrarán avances y casos de éxito de este creciente campo de investigación y desarrollo. Se presentarán diversas aplicaciones en áreas de la salud entre las que se encuentra la Odontología digital, el desarrollo de modelos personalizados a partir de imágenes médicas para planeación quirúrgica, reconstrucción anatómica, bioimpresión entre otros. 
+
+    .block.block--invitados#invitados
+        .field.field--name-invitados-title
+            span
+                |Invitados
+        .field.field--name-invitados-wrap#trigger2
+                +block-item-invitado("/images/speaker/rodrigo-salazar.jpg", "Perú","Rodrigo Salazar" )
+                    |Es consultor de Innovación Tecnológica para la Salud, premiado por “MIT Technology Review” como “Innovador Humanitario de menos de 35 años 2018” para América Latina. Actúa como Director de Relaciones Institucionales de la ONG “Mais Identidade (+ ID)” en São Paulo - Brasil y Asesor de Innovación Tecnológica y Rehabilitación Bucomaxilofacial para la Fundación OREMA en Chile, aliada del Instituto Nacional del Cáncer de Santiago de Chile.
+                    a(href="https://www.innovatorsunder35.com/the-list/rodrigo-salazar" target="_blank") innovatorsunder35
+                +block-item-invitado("/images/speaker/juan-millares.jpg", "Chile","Juan Millares" )
+                    |Actualmente dirige un equipo multidisciplinario que lidera soluciones de productividad a través de la impresión 3D a los sectores económicos más diversos de América Latina. Cuenta con más de 10 años de experiencia como gerente de ventas para América Latina en la Industria de Software y Hardware enfocado al sector de tecnologías de manufactura aditiva. 
+                +block-item-invitado("/images/speaker/bruno-demuro.jpg", "Uruguay","Bruno Demuro" )
+                    |Co-Founder & CEO de ARMOR BIONICS. Formación en Diseño Industrial e Ingeniería Industrial. Innovador y emprendedor serial con sólida formación en ingeniería y diseño industrial. Amplia experiencia en la concepción, operación, y administración de negocios. Desarrollador visionario de productos con una formación profunda en investigación y desarrollo.
+                    a(href="http://www.armorbionics.com/" target="_blank") armorbionics
+                +block-item-invitado("/images/speaker/melissa.jpg", "Colombia","Melisa Cardona" )
+                    |Ingeniera Mecánica, estudiante de Maestría en Ingeniería Mecánica de la Universidad Nacional de Colombia sede Medellín, Gerente de cuenta para Latinoamérica en Materialise. Experiencia en Biomecánica, Procesamiento de imágenes médicas y Diseño personalizado en aplicaciones biomédicas. Experiencia apoyando el desarrollo de proyectos de innovación en Medicina en Latinoamérica.
+                +block-item-invitado("/images/speaker/marco-di-rossi.jpg", "España","Marco De Rossi" )
+                    |Diseñador industrial de la Universidad Pontificia Bolivariana, Máster del Politécnico de Milán en desarrollo de producto y realizando el Doctorado en la Universidad Politécnica de Valencia sobre fabricación aditiva para planeación de cirugías complejas. Director de laboratorio de fabricación digital en la Universidad Politécnica de Valencia, CTO en startup valenciana dedicada a simuladores médicos y otros productos fabricados con impresión 3D en la industria de la salud.
+                +block-item-invitado("/images/speaker/carlos-tascon.jpg", "Colombia","Dr. Carlos Tascón" )
+                    |Médico y cirujano graduado de la Universidad Militar Nueva Granada, con estudios de postgrado en Cirugía Plástica de la Pontificia Universidad Javeriana y sub especialización en Cirugía Maxilofacial de la Fundación Universitaria de Ciencias de la Salud.
+                +block-item-invitado("/images/speaker/christian-silva.jpg", "Colombia","Christian Silva" )
+                    |Máster en Ingeniería Mecánica, Ingeniero Mecatrónico, Doctorando en Ingeniería Mecánica y Mecatrónica con el tema de bioimpresión 3D, es un investigador con una amplia trayectoria en el ámbito de la biomecánica y la impresión 3D, cuenta con publicaciones sobre el diseño mecánico y cosmético de una prótesis parcial de mano, ganador del premio al espíritu innovador de la vicerrectoría de investigaciones de la Universidad Nacional de Colombia.
+                +block-item-invitado("/images/speaker/clara-isabel.jpg", "Colombia","Clara López" )
+                    |Doctorado(c) en Ingeniería, área Gestión Tecnológica, Universidad Industrial de Santander. Magíster en Ingeniería en Materiales, UIS. Diseñadora Industrial, UIS.
+                +block-item-invitado("/images/speaker/oscar-barrera.jpg", "Colombia","Oscar Barrera" )
+                    |Ingeniero de Producción, Especialista en software 3D para el diseño y fabricación de implantes a la medida del paciente, candidato a Máster en Ingeniería Biomédica. Experto en escaneo 3D, post procesamiento de la información y modelado 3D de piezas para impresión 3D o mecanizado CNC. Experiencia en el manejo de equipos de escaneo láser y software para control de calidad de piezas manufacturadas con estándares internacionales.
+                +block-item-invitado("/images/speaker/juan-avila.jpg", "Colombia","Juan Ávila " )
+                    |Director del programa de Diseño Industrial - Universidad El Bosque // Docente de la Facultad de Creación y Comunicación UEB // Docente especialización en Ergonomía UEB // PhD en Diseño, Gestión y Fabricación de proyectos industriales de la Universidad Politécnica de Valencia - España // Maestría en Diseño de producto del Politécnico Di Milano - Italia // Diseñador Industrial Universidad Nacional de Colombia. 
+        .field.field--name-agenda
+            a(href='/images/agenda-congreso-impresion3d-salud.pdf' target="_blank" class='btn btn-agenda') Consultar Agenda
+    
+    .block.block--cursos
+        .field.field--name-curso-title
+            span
+                |Cursos
+        .field.field--name-curso-wrap
+            +block-item-curso('Planeación quirúrgica tridimensional','Para planificación quirúrgica virtual e impresión 3D','29 de Agosto','9pm a 12m (10 cupos)',' Ing. Oscar Barrera', '/images/talleres_congreso_Impresion_3D_Salud.pdf' )
+            +block-item-curso('Desde la imagen al diseño a la medida de los pacientes','','29 de Agosto','2pm a 4pm (20 cupos)','Ing. Daniel Calle', '/images/talleres_congreso_Impresion_3D_Salud.pdf' )
+            +block-item-curso('Modelos anatómicos 3D','Para planificación quirúrgica virtual e impresión 3D','29 de Agosto','4pm a 6pm (20 cupos)','Ing. Daniel Calle', '/images/talleres_congreso_Impresion_3D_Salud.pdf' )
+
+
+    .block.block--inversion#trigger5
+        .field.field--name-inversion-title
+            span
+                |Inversión
+        .field.field--name-inversion-wrap#trigger5wrap
+            +block-item-inversion("","","Estudiantes y Docentes UEB","$180.000")
+            +block-item-inversion("(Pronto pago* -10%)","Hasta el 15 de julio, 2019","Estudiantes y Docentes UEB","$162.000")
+            +block-item-inversion("","","Profesionales","$290.000")
+            +block-item-inversion("(Pronto pago* -10%)","Hasta el 15 de julio, 2019","Profesionales","$261.000")
+            +block-item-inversion("","","Profesionales +  1 Taller","$400.000")
+            +block-item-inversion("(Pronto pago* -10%)","Hasta el 15 de julio, 2019","Matricula Profesionales + Taller","$360.000")
+        .field.field--name-btn-inversion
+            a(href='https://artemisa.unbosque.edu.co/serviciosacademicos/consulta/prematricula/inscripcionestudiante/InscripcionEducacionContinuada/Controller/NewIscripcionEducacionContinuada_html.php?Grupo=154' target="_blank" class='btn btn-inversion') Inscríbete y paga
+    
+    .block.block--empresa#trigger3
+        .field.field--name-empresa-title
+            span
+                |Empresas Invitadas
+        .field.field--name-empresa-destacado
+            |Contamos con el apoyo de empresas representativas en escenario de la Impresión 3D + Salud.
+        .field.field--name-empresa-grid#trigger3wrap
+            +block-item-empresa("/images/logo-stratasys.png", "https://www.stratasys.com/medical")
+                |Líder mundial en impresión 3D, en servicios, materiales y soluciones de fabricación aditiva. Principal referente tecnología Polyjet.
+            +block-item-empresa("/images/logo-materialise.png", "https://www.materialise.com/es/medical")
+                |Pionera en el desarrollo de un gran número de aplicaciones de impresión 3D para fines médicos. Principal referente software Mimics.
+            +block-item-empresa("/images/logo-3dsystems.png", "https://es.3dsystems.com/industries/healthcare")
+                |Desarrollo de implantes en metal con impresión 3D para fines médicos. Software Geomagic.
+            +block-item-empresa("/images/logo-shinig3d.png", "http://en.shining3d.com")
+                |Soluciones dentales digitales en 3D que incluyen el modelo dental y escaneado al diseño de restauración dental. Utilizan máquinas de impresión 3d para fabricar las restauraciones dentales, Sistema abierto para software y equipos de terceros, y tecnología que ayuda a crear un CAD / CAM dental perfectamente integrado. 
+
+    .block.block--form#asitir
+        .fied.field--name-form
+            .field--name-form--title
+                |Estoy interesado en asistir
+            .field--name-form--subtitle
+                |Envíanos tus datos y te estaremos contactando.
+            .field--name-form--wrap
+                form#formulario(name="contactform" method="post" action="php/send_form_email.php")
+                    .form-group
+                        input#first_name.field--name-form--input(type='text', placeholder='Nombres Completos' name='first_name' required="true")
+                    .form-group
+                        input#email.field--name-form--input(type='email', placeholder='nombre@email.com' name='email' required="true")
+                    .form-group
+                        input#telephone.field--name-form--input(type='number', placeholder='Teléfono de Contácto' name='telephone' required="true")
+                    .form-group
+                        input(type='checkbox', name='agreement' checked)
+                        span.tyc
+                            |Autorizo a Universidad El Bosque para el envío de información. Leer 
+                        a(href="https://www.uelbosque.edu.co/sites/default/files/documentos/politica_privacidad_informacion_pagina_web_universidad_el_bosque.pdf" target="_blank") términos y condiciones
+                    button.field.field--name-btn(type="submit" value="Submit") Enviar Datos
+
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+            
+            
+
+
+
+    
+
+
+
