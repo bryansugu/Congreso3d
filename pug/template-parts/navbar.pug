@@ -1,0 +1,19 @@
+header
+  .container
+    .row
+      nav.navbar.navbar-expand-lg
+        a.navbar-brand(href='/') 
+          img(src="images/logoueb.svg" alt="Logo Universidad El Bosque")
+        button.navbar-toggler.collapsed(type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
+          span.close(aria-hidden='true') &times;
+          span.navbar-toggler-icon
+        #navbarNavAltMarkup.collapse.navbar-collapse
+          .navbar-nav
+            a.nav-item.nav-link(href='/')
+              | Home 
+              span.sr-only (current)
+            a.nav-item.nav-link(href='#invitados') Invitados
+            a.nav-item.nav-link(href='images/agenda-congreso-impresion3d-salud.pdf' target="_blank") Agenda
+            a.nav-item.nav-link(href='#asitir') Asistir
+            a.nav-item.nav-link(href='#trigger5') Inversión
+            a.nav-item.nav-link(href='#trigger3') Patrocinadores

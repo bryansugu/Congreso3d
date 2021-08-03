@@ -1,0 +1,201 @@
+extends pug/page-templates/tpl_home.pug
+
+block title
+    title 1er Congreso Internacional Impresión 3D + Salud
+
+block contenido
+    .block.block--hero
+        .field.field--name-hero-image
+            img(src="/images/alambre_cadera_com.png" alt="Imagen Congreso Impresion 3D + Salud")
+        .field.field--name-hero-body
+            .field--name-hero-body--titlevertical
+                |2do congreso internacional
+            .field--name-hero-body--titleh1#logo
+                |Impresión
+            .field--name-hero-body--titleh2
+                |3d
+                span
+                    img(src="/images/icon-mas.svg" alt="Imagen Congreso Impresion 3D + Salud")
+            .field--name-hero-body--titleh3
+                |Salud
+            .field--name-hero-body--date
+                |2 - 4/2021
+            .field--name-hero-body--mes
+                |Septiembre
+            .field--name-hero-body--lugar
+                |Universidad El Bosque<br>
+                |Bogotá - Colombia
+        .field.field--name-icon-mouse
+            span
+    .block.block--about#trigger1
+        .field.field--name-about-destacado
+            |Conoce las tecnologías de software y hardware para la construcción de modelos impresos en 3D para áreas de la salud
+        .field.field--name-about-body
+            |El 2do Congreso Internacional de Impresión 3D + Salud de la Universidad El Bosque será un espacio para compartir experiencias entorno al uso de tecnologías emergentes de fabricación aplicadas a la industria de la Salud; Expositores de la empresas más importantes a nivel mundial en áreas de Medicina, Especialidades Quirúrgicas, Odontología nos contarán cómo éstas aplicaciones de impresión 3D están transformando los procesos de educación y entrenamiento, simulación, desarrollo de guías quirúrgicas, planificación de intervenciones complejas, desarrollo de modelos anatómicos, bioimpresión, impresión 3D de medicamentos entre otros temas revolucionarios.
+            br
+            br 
+            |Es un congreso patrocinado por empresas multinacionales y abierto al público de forma gratuita previa inscripción. Nuestro objetivo es posicionar este campo emergente de investigación y desarrollo en países de habla hispana, visibilizar a los investigadores líderes del sector en latinoamérica y generar sinergias entre la industria, academia y gobierno. Queremos formar públicos que entiendan que podemos dar saltos significativos al incluir tecnologías emergentes en nuestras cadenas de valor, sin realizar inversiones significativas como sucedía antes de la 4ta revolución industrial.
+
+    .block.block--invitados#invitados
+        .field.field--name-invitados-title
+            span
+                |Invitados
+        .field.field--name-invitados-wrap#trigger2
+                +block-item-invitado("/images/speaker/rodrigo-salazar.jpg", "Perú","Rodrigo Salazar" )
+                    |Es consultor de Innovación Tecnológica para la Salud, premiado por “MIT Technology Review” como “Innovador Humanitario de menos de 35 años 2018” para América Latina. Actúa como Director de Relaciones Institucionales de la ONG “Mais Identidade (+ ID)” en São Paulo - Brasil y Asesor de Innovación Tecnológica y Rehabilitación Bucomaxilofacial para la Fundación OREMA en Chile, aliada del Instituto Nacional del Cáncer de Santiago de Chile.
+                    a(href="https://www.innovatorsunder35.com/the-list/rodrigo-salazar" target="_blank") innovatorsunder35
+                +block-item-invitado("/images/speaker/juan-millares.jpg", "Chile","Juan Millares" )
+                    |Actualmente dirige un equipo multidisciplinario que lidera soluciones de productividad a través de la impresión 3D a los sectores económicos más diversos de América Latina. Cuenta con más de 10 años de experiencia como gerente de ventas para América Latina en la Industria de Software y Hardware enfocado al sector de tecnologías de manufactura aditiva. 
+                +block-item-invitado("images/speaker/3DSolutions/OMARMARCIALES_azul.jpg", "Pemdiente","Omar Marciales" )
+                    |Empresa líder en venta y distribución de nuevas tecnologías como Impresión 3d, Escaneo 3d, Microscopía 3d y equipos para investigación, contamos un equipo pro-activo que te ayudará y dará solución tecnológicas a tus necesidades.
+                    a(href="https://www.3dsolutions.com.co/" target="_blank") 3D solutions
+                +block-item-invitado("/images/speaker/LifeSi/Aden_azul.jpg", "Colombia","Aden Díaz Nocera" )
+                    |Aden Díaz Nocera es fundador y CEO de Life SI, empresa dedicada al desarrollo de sistemas de bioimpresión 3D y tecnología para investigadores e investigadoras, con siete años de trayectoria en la Argentina. Es Técnico en Electrónica y ha cursado estudios superiores en Ingeniería Biomédica y Medicina en la Universidad Nacional de Córdoba (UNC).
+                    a(href="https://lifesi.technology/es/productos/" target="_blank") Life SI
+                +block-item-invitado("/images/speaker/TechFit/Melisa_azul.jpg", "Colombia","Melisa Cardona" )
+                    |Coordinadora de desarrollo en TECHFIT Digital Surgery | Planeación quirúrgica digital 3D | Implantes personalizados | Acceso a cirujanos a nivel mundial. Como coordinadora de desarrollo en Techfit defino estrategias que permitan democratizar las soluciones de alta precisión para mejorar los resultados quirúrgicos, estéticos y funcionales, a través de la simulación y planeación quirúrgica virtual.
+                    a(href="https://www.techfit-ds.com/?lang=es" target="_blank") TechFit
+                +block-item-invitado("/images/speaker/marco-di-rossi.jpg", "España","Marco De Rossi" )
+                    |Diseñador industrial de la Universidad Pontificia Bolivariana, Máster del Politécnico de Milán en desarrollo de producto y realizando el Doctorado en la Universidad Politécnica de Valencia sobre fabricación aditiva para planeación de cirugías complejas. Director de laboratorio de fabricación digital en la Universidad Politécnica de Valencia, CTO en startup valenciana dedicada a simuladores médicos y otros productos fabricados con impresión 3D en la industria de la salud.
+                +block-item-invitado("/images/speaker/Shining3D/bogota-andres-melo_azul.jpg", "Colombia","Dr Andres Melo" )
+                    |Docente investigador UniCIEO en alineadores | Entrenador de flujo digital en ortodoncia- aligners in office | Ortodoncista UMNG-CIEO Bogotá Colombia | Fotografía clínica profesional New York University | Entrenamiento avanzado diagnóstico 3D, miniplacas y tornillos.
+                    a(href="https://www.shining3d.com/healthcare-life-science/" target="_blank") Shining 3D
+                +block-item-invitado("/images/speaker/Cellink/Christian-SilvaDeanaNowakowski_azul.jpg", "Colombia","Christian Silva" )
+                    |Candidato a Doctor. Máster en Ingeniería Mecánica, Ingeniero Mecatrónico, experto en el campo de la bioimpresión, investigador con amplia experiencia en el campo de la biomecánica y la impresión 3D, tiene trabajos en el campo del diseño protésico y bioimpresión. Sus principales líneas de investigación son el modelado biomecánico bioinspirado, la simulación cinética y cinemática del movimiento humano, la asistencia robótica con prótesis impresas en 3D y la rehabilitación de personas mediante el uso de tecnología. Actualmente Director de Producto en CELLINK Life Sciences.
+                    a(href="https://www.cellink.com/" target="_blank") Cellink
+                +block-item-invitado("/images/speaker/Cellink/AlfieRRDeanaNowakowski_azul.jpg", "Colombia","Alfie Raymundo" )
+                    |Ingeniero Mecatrónico con Especialidad en Dirección de Operaciones y Maestría en Negocios de Innovación Tecnológica. A lo largo de 12 años, ha tenido la oportunidad de asesorar, desarrollar e integrar más de 3,000 proyectos a través de la especificación e instalación de tecnologías de manufactura aditiva, impresión 3D y bioimpresión 3D, asistiendo a pequeñas y medianas empresas, plantas industriales, compañías transnacionales, universidades, centros de investigación, laboratorios de biotecnología e individuos entusiastas de la tecnología, siendo la medicina y la salud sus campos de especialización en los últimos años. Actualmente es Consultor para la región América Latina en CELLINK Life Sciences.
+                    a(href="https://www.cellink.com/" target="_blank") Cellink
+                +block-item-invitado("/images/speaker/oscar-barrera.jpg", "Colombia","Oscar Barrera" )
+                    |Ingeniero de Producción, Especialista en software 3D para el diseño y fabricación de implantes a la medida del paciente, candidato a Máster en Ingeniería Biomédica. Experto en escaneo 3D, post procesamiento de la información y modelado 3D de piezas para impresión 3D o mecanizado CNC. Experiencia en el manejo de equipos de escaneo láser y software para control de calidad de piezas manufacturadas con estándares internacionales.
+                +block-item-invitado("/images/speaker/Merck/ManuelJaime_azul.jpg", "Colombia","Manuel Jaime Rodríguez" )
+                    |Emprendedor y Consultor/Profesor en Tecnológico de Monterrey/Estudiante Doctorado en Biotecnología Docente e investigador del Tecnológico de Monterrey cuenta con 10 años de experiencia en la industria biofarmacéutica.  Durante su trayectoria profesional ha tenido la Jefatura de Tecnología Celular de Laboratorios de Especialidades Inmunológicas, donde fue pionero en la implementación de pruebas de control de calidad sin uso de animales en México, transfiriendo métodos provenientes de EpiSkin ubicado en Lyon, Francia.
+                    a(href="https://www.merckgroup.com/en/news/3d-printing-of-tablets-27-02-2020.html" target="_blank") Merck Group
+                +block-item-invitado("/images/speaker/Merck/Aden_azul_merck.jpg", "Colombia","Aden Díaz Nocera" )
+                    |Director at Life SI | 3D Printing Systems for Research Fundador y CEO de Life SI, empresa dedicada al desarrollo de sistemas de bioimpresión 3D y tecnología para investigadores e investigadoras, con siete años de trayectoria en la Argentina. Es Técnico en Electrónica y ha cursado estudios superiores en Ingeniería Biomédica y Medicina en la Universidad Nacional de Córdoba (UNC).
+                    a(href="https://www.merckgroup.com/en/news/3d-printing-of-tablets-27-02-2020.html" target="_blank") Merck Group
+                +block-item-invitado("/images/speaker/Mirrakoi/Valeria_azul.jpg", "Colombia","Valeria Palacio Manco" )
+                    |Diseñadora industrial certificada de Rhino3D Colombia, egresada de la Universidad Pontificia Bolivariana de la ciudad de Medellín.
+                    a(href="https://mirrakoi.com/" target="_blank") Mirrakoi
+                    a(href="https://rhino3dmedical.com/" target="_blank") Rhino 3D Medical
+                +block-item-invitado("/images/speaker/Mirrakoi/Camilo_azul.jpg", "Colombia","Camilo Andrés Hernández Gallego" )
+                    |Médico-Cirujano Plástico de la Universidad de Antioquia, Microcirujano de la Universidad de Uppsala Suecia.
+                    a(href="https://mirrakoi.com/" target="_blank") Mirrakoi
+                    a(href="https://rhino3dmedical.com/" target="_blank") Rhino 3D Medical
+                +block-item-invitado("/images/speaker/Mirrakoi/Pablo_azul.jpg", "Colombia","Pablo García-Amorena García" )
+                    |Desarrollador principal de Rhino3DMedical y Director de Mirrakoi.
+                    a(href="https://mirrakoi.com/" target="_blank") Mirrakoi
+                    a(href="https://rhino3dmedical.com/" target="_blank") Rhino 3D Medical
+
+        .field.field--name-agenda
+            a(href='/images/agenda-congreso-impresion3d-salud.pdf' target="_blank" class='btn btn-agenda') Consultar Agenda
+
+
+    .block.block--empresa#trigger3
+        .field.field--name-empresa-title
+            span
+                |Empresas Invitadas
+        .field.field--name-empresa-destacado
+            |Contamos con el apoyo de empresas representativas en escenario de la Impresión 3D + Salud.
+        .field.field--name-empresa-grid#trigger3wrap
+            +block-item-empresa("/images/logo-materialise.png", "https://www.materialise.com/es/medical")
+                |Pionera en el desarrollo de un gran número de aplicaciones de impresión 3D para fines médicos. Principal referente software Mimics.
+            +block-item-empresa("/images/logo-cellink.jpg", "#")
+                |Líder mundial en impresión 3D, en servicios, materiales y soluciones de fabricación aditiva. Principal referente tecnología Polyjet.
+            +block-item-empresa("/images/logo-mirrakoi.jpg", "#")
+                |Soluciones dentales digitales en 3D que incluyen el modelo dental y escaneado al diseño de restauración dental.
+            +block-item-empresa("/images/logo-3dsystems.png", "https://es.3dsystems.com/industries/healthcare")
+                |Desarrollo de implantes en metal con impresión 3D para fines médicos. Software Geomagic.
+            +block-item-empresa("/images/logo-grupoabstract.jpg", "#")
+                |Líder mundial en impresión 3D, en servicios, materiales y soluciones de fabricación aditiva. Principal referente tecnología Polyjet.
+            +block-item-empresa("/images/logo-stratasys.png", "#")
+                |Pionera en el desarrollo de un gran número de aplicaciones de impresión 3D para fines médicos. Principal referente software Mimics.
+            +block-item-empresa("/images/logo-lifesi.jpg", "#")
+                |Desarrollo de implantes en metal con impresión 3D para fines médicos. Software Geomagic.
+            +block-item-empresa("/images/logo-merck.jpg", "#")
+                |Soluciones dentales digitales en 3D que incluyen el modelo dental y escaneado al diseño de restauración dental. 
+            +block-item-empresa("/images/logo-3dsolutions.jpg", "#")
+                |Pionera en el desarrollo de un gran número de aplicaciones de impresión 3D para fines médicos. Principal referente software Mimics.
+            +block-item-empresa("/images/logo-techfit.jpg", "#")
+                |Líder mundial en impresión 3D, en servicios, materiales y soluciones de fabricación aditiva. Principal referente tecnología Polyjet.
+            +block-item-empresa("/images/logo-shinig3d.png", "http://en.shining3d.com")
+                |Soluciones dentales digitales en 3D que incluyen el modelo dental y escaneado al diseño de restauración dental.
+            +block-item-empresa("/images/logo-meltio.jpg", "#")
+                |Desarrollo de implantes en metal con impresión 3D para fines médicos. Software Geomagic.    
+                
+    //- INVERSION
+    .block.block--inversion#trigger5(style="display:none")
+        .field.field--name-inversion-title
+            span
+                |Inversión
+        .field.field--name-inversion-wrap#trigger5wrap
+            +block-item-inversion("","","Estudiantes y Docentes UEB","$180.000")
+            +block-item-inversion("(Pronto pago* -10%)","Hasta el 15 de julio, 2019","Estudiantes y Docentes UEB","$162.000")
+            +block-item-inversion("","","Profesionales","$290.000")
+            +block-item-inversion("(Pronto pago* -10%)","Hasta el 15 de julio, 2019","Profesionales","$261.000")
+            +block-item-inversion("","","Profesionales +  1 Taller","$400.000")
+            +block-item-inversion("(Pronto pago* -10%)","Hasta el 15 de julio, 2019","Matricula Profesionales + Taller","$360.000")
+        .field.field--name-btn-inversion
+            a(href='https://artemisa.unbosque.edu.co/serviciosacademicos/consulta/prematricula/inscripcionestudiante/InscripcionEducacionContinuada/Controller/NewIscripcionEducacionContinuada_html.php?Grupo=154' target="_blank" class='btn btn-inversion') Inscríbete y paga
+    
+
+    .block.block--form#asitir
+        .fied.field--name-form
+            .field--name-form--title
+                |Estoy interesado en asistir
+            .field--name-form--subtitle
+                |Envíanos tus datos y te estaremos contactando.
+            .field--name-form--wrap
+                img(src="/images/alambre_cadera_com.png" alt="Imagen Congreso Impresion 3D + Salud" width="80%" style="margin-left:10%;")
+                .field--name-form--title REGISTRATE GRATIS!!                                                        
+                p(style="opacity:0.8;margin-top:35px;") Registrate totalmente <strong>Gratis</strong>, recibirás conferencias y talleres de las empresas lideres en el mercado, Materialise, Cellink, Mirrakoi, 3D systems, Grupo Abstract, Stratasys, LifeSi, Merck, 3DSolutions, TechFit, Shining 3D, Meltio.
+                p <strong>Ingresa con el siguiente botón al registro</strong>. 
+                //- form#formulario(name="contactform" method="post" action="php/send_form_email.php")
+                //-     .form-group
+                //-         input#first_name.field--name-form--input(type='text', placeholder='Nombres Completos' name='first_name' required="true")
+                //-     .form-group
+                //-         input#email.field--name-form--input(type='email', placeholder='nombre@email.com' name='email' required="true")
+                //-     .form-group
+                //-         input#telephone.field--name-form--input(type='number', placeholder='Teléfono de Contácto' name='telephone' required="true")
+                //-     .form-group
+                //-         input(type='checkbox', name='agreement' checked)
+                //-         span.tyc
+                //-             |Autorizo a Universidad El Bosque para el envío de información. Leer 
+                //-         a(href="https://www.uelbosque.edu.co/sites/default/files/documentos/politica_privacidad_informacion_pagina_web_universidad_el_bosque.pdf" target="_blank") términos y condiciones
+            a.field.field--name-btn(href="https://live.eventtia.com/es/congreso3dsalud" target="_blank" style="color:white; text-align:center") <strong>Registrarme</strong>
+
+    //- CURSOS
+    .block.block--cursos
+        //- .field.field--name-curso-title
+        //-     span
+        //-         |Agenda
+        a(href="#" style="grid-column: 1/16;")
+            img(src="/images/PosterformatoPNG.png" alt="Agenda Impresion 3D + Salud" width="100%" )
+            
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+            
+            
+
+
+
+    
+
+
+

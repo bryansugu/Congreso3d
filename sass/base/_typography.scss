@@ -1,0 +1,74 @@
+/* TYPOGRAPHY */
+
+@font-face {
+    font-family: 'DINPro-Bold';
+    src: url('../fonts/DINPro-Bold.eot');
+    src: url('../fonts/DINPro-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DINPro-Bold.woff2') format('woff2'),
+         url('../fonts/DINPro-Bold.woff') format('woff'),
+         url('../fonts/DINPro-Bold.svg#DINPro-Bold') format('svg');
+}
+@font-face {
+    font-family: 'DINPro-Light';
+    src: url('../fonts/DINPro-Light.eot');
+    src: url('../fonts/DINPro-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DINPro-Light.woff2') format('woff2'),
+         url('../fonts/DINPro-Light.woff') format('woff'),
+         url('../fonts/DINPro-Light.svg#DINPro-Light') format('svg');
+}
+@font-face {
+    font-family: 'DINPro-Medium';
+    src: url('../fonts/DINPro-Medium.eot');
+    src: url('../fonts/DINPro-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DINPro-Medium.woff2') format('woff2'),
+         url('../fonts/DINPro-Medium.woff') format('woff'),
+         url('../fonts/DINPro-Medium.svg#DINPro-Medium') format('svg');
+}
+@font-face {
+    font-family: 'DINPro-Regular';
+    src: url('../fonts/DINPro-Regular.eot');
+    src: url('../fonts/DINPro-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DINPro-Regular.woff2') format('woff2'),
+         url('../fonts/DINPro-Regular.woff') format('woff'),
+         url('../fonts/DINPro-Regular.svg#DINPro-Regular') format('svg');
+}
+
+
+// Acherus grotesque
+$font-dp-light: 'DINPro-Light';
+$font-dp-regular: 'DINPro-Regular';
+$font-dp-bold: 'DINPro-Bold';
+$font-dp-medium: 'DINPro-Medium';
+
+
+/* Google Fonts */
+
+//@import url("https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,900italic");
+//@import url("https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900");
+// font families
+//$font-lato: 'Lato',Arial,Verdana,sans-serif;
+//$font-raleway: 'Raleway',Arial,Verdana,sans-serif;
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+$font-family-sans-serif: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif !default;
+$font-family-serif: Georgia,"Times New Roman",Times,serif !default;
+$font-family-monospace: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+$font-family-base: $font-family-sans-serif;
+
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-weight-normal: normal;
+$font-weight-bold: bold;
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.5;
+$font-size-h1: 2.5rem;
+$font-size-h2: 2rem;
+$font-size-h3: 1.75rem;
+$font-size-h4: 1.5rem;
+$font-size-h5: 1.25rem;
+$font-size-h6: 1rem;
+
+
+
+
+

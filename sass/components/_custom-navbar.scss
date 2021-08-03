@@ -1,0 +1,78 @@
+@import "../../node_modules/bootstrap/scss/mixins";
+
+header{
+	background-color: $color-brand-light !important;
+}
+.navbar-expand-lg{
+	padding: 0;
+	.navbar-brand{
+		padding:0;
+	}
+	.nav-item{
+		@include font-set($font-dp-regular, $size-14, $color-negro-0, 2px,  1);
+		text-transform: uppercase;
+		&:hover{
+			text-decoration: underline;
+		}
+	} 
+}
+.navbar-brand{
+	img{
+		@include img-fluid();
+	}
+}
+.navbar{
+	//background: white;
+	@include media-breakpoint-down(sm) {
+		//border:1px solid $color-negro-10;
+		margin-bottom: 1rem;
+	}
+	z-index: 10;
+	margin-bottom: 1.5rem;
+	@media screen and (min-width: $break-slarge) {
+	    margin-bottom: 2rem;
+	}
+
+	.navbar-toggler{
+		border: 0;
+		.close{
+			font-size: 2.5rem;
+		    font-weight: 400;
+		    color: $color-negro-0;
+		    text-shadow: none;
+		    opacity: 1;
+		    padding-right: 4px;
+		    margin-top: -7px;
+		}
+		&.collapsed{
+			>.close{
+				display: none;
+			}
+		}
+		&:not(.collapsed){
+			>.navbar-toggler-icon{
+				display: none;
+			}
+		}
+		&:focus,
+		&:active{
+			outline: none;
+    		box-shadow: none;
+		}
+		.navbar-toggler-icon{
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='4' stroke-linecap='butt' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+		}
+		>.close {
+		    display:inline;
+		}
+	}
+}
+.navbar-collapse{
+	@include media-breakpoint-down(md) {
+		text-align: center;
+		border-bottom: 1px solid rgba(255,255,255,.2);
+		border-top: 1px solid rgba(255,255,255,.2);
+	}
+
+}
+

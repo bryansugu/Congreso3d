@@ -1,0 +1,18 @@
+/* IMPORTS */
+
+// typography
+@import "base/typography";
+
+// Base variables
+@import "base/variables";
+@import "base/mixins";
+
+//bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Components
+@import "components/custom-homepage";
+@import "components/custom-navbar";
+
+// Layout
+@import "layouts/tpl-home";
