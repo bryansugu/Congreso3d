@@ -11010,6 +11010,7 @@ h3 {
   left: 0;
   width: 0;
   white-space: nowrap;
+  margin-top: 5rem;
   top: 1rem;
   left: 0;
   position: absolute;
@@ -11088,7 +11089,7 @@ h3 {
   letter-spacing: 2px;
   line-height: 1;
   text-transform: uppercase;
-  margin-top: 5rem;
+  margin-top: 2rem;
   opacity: 0;
 }
 @media (max-width: 767.98px) {

@@ -82,6 +82,7 @@ body{
 			left: 0;
 			width: 0;
 			white-space: nowrap;
+			margin-top: 5rem;
 			@include rotate-autor(1rem, 0);
 			@include media-breakpoint-down(sm) {
 				position: relative;
@@ -130,7 +131,7 @@ body{
 		&--date{
 			@include font-set($font-dp-light, $size-63, $color-negro-0, 2px,  1);
 			text-transform: uppercase;
-			margin-top: 5rem;
+			margin-top: 2rem;
 			opacity: 0;
 			@include media-breakpoint-down(sm) {
 				font-size: $size-40;
