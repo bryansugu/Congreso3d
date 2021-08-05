@@ -13228,6 +13228,46 @@ header {
     -ms-grid-column-span: 14;
     grid-column: 1/15;
   }
+  .field--name-empresa-grid > .field:nth-child(5) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 14;
+    grid-column: 1/15;
+  }
+  .field--name-empresa-grid > .field:nth-child(6) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 14;
+    grid-column: 1/15;
+  }
+  .field--name-empresa-grid > .field:nth-child(7) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 14;
+    grid-column: 1/15;
+  }
+  .field--name-empresa-grid > .field:nth-child(8) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 14;
+    grid-column: 1/15;
+  }
+  .field--name-empresa-grid > .field:nth-child(9) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 14;
+    grid-column: 1/15;
+  }
+  .field--name-empresa-grid > .field:nth-child(10) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 14;
+    grid-column: 1/15;
+  }
+  .field--name-empresa-grid > .field:nth-child(11) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 14;
+    grid-column: 1/15;
+  }
+  .field--name-empresa-grid > .field:nth-child(12) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 14;
+    grid-column: 1/15;
+  }
   .field--name-empresa-grid > .field:nth-child(4) {
     -ms-grid-column: 1;
     -ms-grid-column-span: 14;
@@ -13308,17 +13348,37 @@ header {
   }
   .field--name-footer--col3 {
     -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
-    grid-column: 1/13;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
     -ms-grid-row: 2;
     grid-row: 2/2;
   }
   .field--name-footer--col4 {
+    -ms-grid-column: 8;
+    -ms-grid-column-span: 5;
+    grid-column: 8/13;
+    -ms-grid-row: 2;
+    grid-row: 2/2;
+  }
+  .field--name-footer--col5 {
     -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
-    grid-column: 1/13;
-    -ms-grid-row: 3;
-    grid-row: 3/3;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+  }
+  .field--name-footer--col6 {
+    -ms-grid-column: 8;
+    -ms-grid-column-span: 5;
+    grid-column: 8/13;
+  }
+  .field--name-footer--col7 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+  }
+  .field--name-footer--col8 {
+    -ms-grid-column: 8;
+    -ms-grid-column-span: 5;
+    grid-column: 8/13;
   }
 }
 .field--name-gracias-image {
