@@ -108,9 +108,19 @@ var card12 = document.getElementById("trigger2").childNodes[23];
 var card13 = document.getElementById("trigger2").childNodes[25];
 var card14 = document.getElementById("trigger2").childNodes[27];
 var card15 = document.getElementById("trigger2").childNodes[29];
+var card16 = document.getElementById("trigger2").childNodes[31];
+var card17 = document.getElementById("trigger2").childNodes[33];
+var card18 = document.getElementById("trigger2").childNodes[35];
+var card19 = document.getElementById("trigger2").childNodes[37];
+var card20 = document.getElementById("trigger2").childNodes[39];
+var card21 = document.getElementById("trigger2").childNodes[41];
+var card22 = document.getElementById("trigger2").childNodes[43];
+var card23 = document.getElementById("trigger2").childNodes[45];
+var card24 = document.getElementById("trigger2").childNodes[47];
+
 
 // build tween
-TweenMax.set([card1,card2,card3,card4,card5,card6,card7,card8,card9,card10,card11,card12,card13,card14,card15], {yPercent: -20})
+TweenMax.set([card1,card2,card3,card4,card5,card6,card7,card8,card9,card10,card11,card12,card13,card14,card15,card16,card17,card18,card19,card20,card21,card22,card23,card24], {yPercent: -20})
 var tween1 = TweenMax.to([tle1], 0.5, {yPercent: 0, opacity:1});
 var tween2 = TweenMax.to([card1], 0.5, {yPercent: 0, opacity:1});
 var tween3 = TweenMax.to([card2], 0.5, {yPercent: 0, opacity:1});
@@ -128,10 +138,18 @@ var tween16 = TweenMax.to([card12], 0.5, {yPercent: 0, opacity:1, delay:1});
 var tween17 = TweenMax.to([card13], 0.5, {yPercent: 0, opacity:1, delay:1});
 var tween18 = TweenMax.to([card14], 0.5, {yPercent: 0, opacity:1, delay:1});
 var tween19 = TweenMax.to([card15], 0.5, {yPercent: 0, opacity:1, delay:1});
-
+var tween20 = TweenMax.to([card16], 0.5, {yPercent: 0, opacity:1, delay:1});
+var tween21 = TweenMax.to([card17], 0.5, {yPercent: 0, opacity:1, delay:1});
+var tween22 = TweenMax.to([card18], 0.5, {yPercent: 0, opacity:1, delay:1});
+var tween23 = TweenMax.to([card19], 0.5, {yPercent: 0, opacity:1, delay:1});
+var tween24 = TweenMax.to([card20], 0.5, {yPercent: 0, opacity:1, delay:1});
+var tween25 = TweenMax.to([card21], 0.5, {yPercent: 0, opacity:1, delay:1});
+var tween26 = TweenMax.to([card22], 0.5, {yPercent: 0, opacity:1, delay:1});
+var tween27 = TweenMax.to([card23], 0.5, {yPercent: 0, opacity:1, delay:1});
+var tween28 = TweenMax.to([card24], 0.5, {yPercent: 0, opacity:1, delay:1});
 // build scene          
 var scene2 = new ScrollMagic.Scene({triggerElement: "#trigger2",triggerHook: 'onEnter', offset: 0, duration: 900})
-    .setTween([tween1,tween2,tween3,tween4,tween5,tween6,tween7,tween12,tween13,tween14,tween144,tween15,tween16,tween17,tween18,tween19])
+    .setTween([tween1,tween2,tween3,tween4,tween5,tween6,tween7,tween12,tween13,tween14,tween144,tween15,tween16,tween17,tween18,tween19,tween20,tween21,tween22,tween23,tween24,tween25,tween26,tween27,tween28])
     //.addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
@@ -241,7 +259,17 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
 
 
-
+// Desplegable
+function vermas(id){
+    if(id=="mas"){
+    document.getElementById("desplegar").style.display="block";   
+    document.getElementById("mas").style.display="none"; 
+    }
+    else{
+    document.getElementById("desplegar").style.display="none";
+    document.getElementById("mas").style.display="inline";
+    }
+    }
 
 
 

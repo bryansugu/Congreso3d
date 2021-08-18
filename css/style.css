@@ -10849,14 +10849,13 @@ h3 {
   width: 100%;
 }
 .block--cursos {
-  background: #0F79FF;
-  padding: 2rem 0 3rem;
-  background: #0F79FF;
+  background: #FFF;
+  background: #FFF;
   position: relative;
 }
 .block--cursos::before, .block--cursos::after {
   content: "";
-  background: #0F79FF;
+  background: #FFF;
   display: block;
   height: 100%;
   position: absolute;
@@ -10906,14 +10905,14 @@ h3 {
   }
 }
 .block--form {
-  background: #FFE6EB;
-  padding: 3rem 0;
-  background: #FFE6EB;
+  background: #F2F7FF;
+  padding: 9rem 0;
+  background: #F2F7FF;
   position: relative;
 }
 .block--form::before, .block--form::after {
   content: "";
-  background: #FFE6EB;
+  background: #F2F7FF;
   display: block;
   height: 100%;
   position: absolute;
@@ -11660,7 +11659,6 @@ h3 {
 }
 .field--name-form--wrap {
   background: white;
-  padding: 3.125rem 4.375rem;
   border-radius: 5px;
   margin-top: 2rem;
 }

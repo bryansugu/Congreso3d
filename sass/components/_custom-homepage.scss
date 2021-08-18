@@ -28,9 +28,9 @@ body{
 		@include color-desborde($color-brand);
 	}
 	&--cursos{
-		background: $color-brand-light;
-		padding: 2rem 0 3rem;
-		@include color-desborde($color-brand-light);
+		background: $color-white;
+		// padding: 2rem 0 3rem;
+		@include color-desborde($color-white);
 	}
 	&--invitados{
 		background: $color-brand-dark;
@@ -45,9 +45,9 @@ body{
 		}
 	}
 	&--form{
-		background: $color-magenta-30;
-		padding: 3rem 0 ;
-		@include color-desborde($color-magenta-30);
+		background: $color-gris;
+		padding: 9rem 0 ;
+		@include color-desborde($color-gris);
 	}
 	&--footer{
 		background: $color-negro-0;
@@ -511,7 +511,7 @@ body{
 	}
 	&--name-form--wrap{
 		background: $color-negro-0;
-		padding: $size-50 $size-70;
+		// padding: $size-50 $size-70;
 		border-radius: 5px;
 		margin-top: 2rem;
 		@include media-breakpoint-down(sm) {
