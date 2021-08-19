@@ -250,6 +250,9 @@
 		>.field:nth-child(12){
 	    	grid-column: 12 / 16;
 	    }
+		>.field:nth-child(13){
+	    	grid-column: 1 / 4;
+	    }
 	    >.field:nth-child(4){
 	    	grid-column: 12 / 16;
 	    	.field--name-empresa-card--body{

@@ -13198,6 +13198,11 @@ header {
   -ms-grid-column-span: 4;
   grid-column: 12/16;
 }
+.field--name-empresa-grid > .field:nth-child(13) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
 .field--name-empresa-grid > .field:nth-child(4) {
   -ms-grid-column: 12;
   -ms-grid-column-span: 4;

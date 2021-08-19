@@ -207,6 +207,7 @@ var cmy9 = document.getElementById("trigger3wrap").childNodes[17];
 var cmy10 = document.getElementById("trigger3wrap").childNodes[19];
 var cmy11 = document.getElementById("trigger3wrap").childNodes[21];
 var cmy12 = document.getElementById("trigger3wrap").childNodes[23];
+var cmy13 = document.getElementById("trigger3wrap").childNodes[25];
 
 var tween8 = TweenMax.to([cmy1], 0.5, {yPercent: 0, opacity:1, delay:0.25});
 var tween9 = TweenMax.to([cmy2], 0.5, {yPercent: 0, opacity:1, delay:0.30});
@@ -221,6 +222,7 @@ var tween16 = TweenMax.to([cmy9], 0.5, {yPercent: 0, opacity:1, delay:0.40});
 var tween17 = TweenMax.to([cmy10], 0.5, {yPercent: 0, opacity:1, delay:0.40});
 var tween18 = TweenMax.to([cmy11], 0.5, {yPercent: 0, opacity:1, delay:0.40});
 var tween19 = TweenMax.to([cmy12], 0.5, {yPercent: 0, opacity:1, delay:0.40});
+var tween20 = TweenMax.to([cmy13], 0.5, {yPercent: 0, opacity:1, delay:0.40});
 
 
 // var scene4 = new ScrollMagic.Scene({triggerElement: "#trigger3wrap",triggerHook: 'onEnter', offset: 50, duration: 600})
