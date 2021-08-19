@@ -269,8 +269,39 @@ function vermas(id){
     document.getElementById("desplegar").style.display="none";
     document.getElementById("mas").style.display="inline";
     }
+    if(id=="mas_2"){
+        document.getElementById("desplegar_2").style.display="block";   
+        document.getElementById("mas_2").style.display="none"; 
+        }
+        else{
+        document.getElementById("desplegar_2").style.display="none";
+        document.getElementById("mas_2").style.display="inline";
+        }
+        if(id=="mas_3"){
+            document.getElementById("desplegar_3").style.display="block";   
+            document.getElementById("mas_3").style.display="none"; 
+            }
+            else{
+            document.getElementById("desplegar_3").style.display="none";
+            document.getElementById("mas_3").style.display="inline";
+            }    
+            if(id=="mas_4"){
+                document.getElementById("desplegar_4").style.display="block";   
+                document.getElementById("mas_4").style.display="none"; 
+                }
+                else{
+                document.getElementById("desplegar_4").style.display="none";
+                document.getElementById("mas_4").style.display="inline";
+                }  
+                if(id=="mas_5"){
+                    document.getElementById("desplegar_5").style.display="block";   
+                    document.getElementById("mas_5").style.display="none"; 
+                    }
+                    else{
+                    document.getElementById("desplegar_5").style.display="none";
+                    document.getElementById("mas_5").style.display="inline";
+                    }  
     }
-
 
 
 
