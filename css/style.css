@@ -13272,6 +13272,11 @@ header {
     -ms-grid-column-span: 14;
     grid-column: 1/15;
   }
+  .field--name-empresa-grid > .field:nth-child(13) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 14;
+    grid-column: 1/15;
+  }
   .field--name-empresa-grid > .field:nth-child(4) {
     -ms-grid-column: 1;
     -ms-grid-column-span: 14;
