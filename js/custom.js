@@ -303,6 +303,14 @@ function vermas(id){
                     document.getElementById("desplegar_5").style.display="none";
                     document.getElementById("mas_5").style.display="inline";
                     }  
+                    if(id=="mas_6"){
+                        document.getElementById("desplegar_6").style.display="block";   
+                        document.getElementById("mas_6").style.display="none"; 
+                        }
+                        else{
+                        document.getElementById("desplegar_6").style.display="none";
+                        document.getElementById("mas_6").style.display="inline";
+                        }  
     }
 
 
